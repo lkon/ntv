@@ -1,603 +1,724 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>NTV - test page</title>
 	<link rel="stylesheet" href="css/main.css"/>
+	<!--[if gte IE 9]>
+	  <style type="text/css">	
+		.hot-links__link:before,
+		archive-news {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
+	<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
-	<div class="body__wrap-in">
-				<header class="head u-clearfix">
-					<!-- Main menu (BEGIN) -->
-					<nav class="column menu">
-						<ul class="menu__list">
-							 <li class="column"><a class="menu__link head__menu" href="#news" >Новости</a></li
-							><li class="column"><a class="menu__link_active head__menu" href="#broadcast" >Передачи</a></li
-							><li class="column"><a class="menu__link head__menu" href="#tv-prog" >Телепрограмма</a></li
-							><li class="column"><a class="menu__link head__menu" href="#photo" >Фото</a></li>
-						</ul>
-					</nav
-					><form class="column head__menu search" name="search" action="#" method="get">
-						<input class="search__string" type="search" name="search_string" placeholder="Поиск"/>
-						<input class="search__submit" type="submit" />
-					</form
-					><dl class="column auth">
-						 <dt class="column head__menu auth__link">Войти</dt><dd class="auth__popup"><div class="auth__enter-popup__content"></div></dd
-						><dt class="column head__menu auth__link">Регистрация</dt><dd class="auth__popup"><div class="auth__reg-popup__content"></div></dd>
-					</dl>
-					<!-- Main menu (END) -->
-					<div class="wrap_730">
-						<div class="logo">				
-							<h1 class="logo__head">
-								<a href="http://ntv.ru" class="logo__link">
-									<img src="i/logo/logo.jpg" alt="HTB" width="102" height="95" />
-									НТВ</a></h1>
-						</div>
-					<!-- Last news (BEGIN) -->
-						<ul class="head__list head__list_has_height">
-							<li class="column head__item">
-								<figure>
-									<img class="last-news__img" src="i/last-news/last-news_1.jpg" alt="Чубайс похвастался свадебным фото" />
-									<figcaption>Чубайс похвастался свадебным фото</figcaption>
-								</figure>
-							</li
-							><li class="column head__item">
-								<figure>
-									<img class="last-news__img" src="i/last-news/last-news_2.jpg" alt="Неравный брак Пугачёвой заинтересовал сексологов" />
-									<figcaption>Неравный брак Пугачёвой заинтересовал сексологов</figcaption>
-								</figure>
-							</li
-							><li class="column head__item">
-								<figure>
-									<img class="last-news__img" src="i/last-news/last-news_3.jpg" alt="Пенсионерку засекли за вандализмом" />
-									<figcaption>Пенсионерку засекли за вандализмом</figcaption>
-								</figure>
-							</li>
-						</ul>
-						<ul class="head__list current__list">
-							<li class="column head__item current__item"> Сейчас&nbsp;<a href="#time">13.38</a></li>
-							<li class="column head__item current__item"> USD&nbsp;<a href="#dollar">30.3626</a></li>
-							<li class="column head__item current__item"> EUR&nbsp;<a href="#evro">39.7841</a></li>
-						</ul>
+	<!-- PAGE (BEGIN) -->
+	<div class="page">
+		<!-- HEAD (BEGIN) -->
+		<header class="head u-clearfix">
+			<!-- MAIN MENU (BEGIN) -->
+			<nav class="column menu">
+				<ul class="menu__list">
+					 <li class="column"><a class="menu__link head__menu" href="#news" >Новости</a></li
+					><li class="column"><a class="menu__link menu__link_active head__menu" href="#broadcast" >Передачи</a></li
+					><li class="column"><a class="menu__link head__menu" href="#tv-prog" >Телепрограмма</a></li
+					><li class="column"><a class="menu__link head__menu" href="#photo" >Фото</a></li>
+				</ul>
+			</nav
+			><form class="column head__menu search" name="search" action="#" method="get">
+				<input class="search__string" type="search" name="search_string" placeholder="Поиск"/>
+				<input class="search__submit" type="submit" />
+			</form
+			><ul class="column auth">
+				 <li class="column"><a class="menu__link head__menu" href="#auth">Войти</a></li
+				><li class="column"><a class="menu__link head__menu" href="#reg">Регистрация</a></li>
+			</ul>
+			<!-- MAIN MENU (END) -->
+			<div class="wrap_730">
+				<div class="logo__wrap-out">
+					<div class="logo">				
+						<h1>
+							<a href="http://ntv.ru" class="logo__head">
+								<img src="i/logo/logo.jpg" alt="HTB" width="102" height="95" />
+								НТВ</a></h1>
 					</div>
-					<!-- Last news (END) -->
-					<div class="wrap_230 weather aside">
-						<div class="head__list_has_height weather__logo">
-							<img src="i/weather/weather__logo.png" alt="Прогноз погоды" width="61" height="72" />
-						</div>
-						<a href="#weather" class="weather__link">Прогноз погоды&nbsp;на <span id="weather__date">23 января</span></a>
-						<div class="column head__item weather__item current__item">Погода&nbsp;<a href="#weather">-18.3</a></div>
-					</div>
-				</header>
-				<div class="red-line__wrap-out u-clearfix">
-					<!-- RED LINE (BEGIN) -->
-					<div class="red-line">
-						<h2 class="column red-line__head">Срочно</h2>
-						<div class="column red-line__list__wrap-out">
-							<ul class="red-line__list">
-								<li class="column red-line__item">
-									<a href="#victory" class="red-line__link">РОССИЯНКИ ВЫИГРАЛИ  AUSTRALIAN  OPEN</a>
-								</li
-								><li class="column red-line__item">
-									<a href="#victory_1" class="red-line__link">Англичанки ВЫИГРАЛИ  AUSTRALIAN  OPEN</a>
-								</li
-								><li class="column red-line__item">
-									<a href="#victory_2" class="red-line__link">Бразильянки ВЫИГРАЛИ  AUSTRALIAN  OPEN</a>
-								</li>
-							</ul>
-						</div>
-						<ul class="column red-line__rule-list">
-							<li class="red-line__rule-next">&#60;</li>
-							<li class="red-line__rule-prev">&#62;</li>
-						</ul>
-					</div>
-					<!-- VIDEO -->
-					<div class="red-line__video">
-						<img src="i/video__main.jpg" alt="" width="480" height="360" />
-					</div>
-					<!-- VIDEO -->
-					<!-- RED-LINE__NEWS -->
-					<dl class="red-line__news wrap_230">
-						<dt class="red-line__news__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля</dt>
-						<dd class="red-line__news__content red-line__news__content_selected">
-							<article>
-								<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
-								<p>Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
-								<footer class="read-more">
-									<a class="read-more__link" href="#cold">Читать далее</a>
-									<span class="watch">45</span>
-									<span class="comment">6</span>
-								</footer>
-							</article>
-						</dd>
-						<dt class="red-line__news__head">В школе Нальчика вместо полицейских убили летчика-штурмовика</dt>
-						<dd class="red-line__news__content">
-							<article>
-								<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
-								<p>Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
-								<footer class="read-more">
-									<a class="read-more__link" href="#cold">Читать далее</a>
-									<span class="watch">45</span>
-									<span class="comment">6</span>
-								</footer>
-							</article>
-						</dd>
-						<dt class="red-line__news__head">Фигурист Гачинский подложил сюрприз Плющенко</dt>
-						<dd class="red-line__news__content">
-							<article>
-								<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
-								<p>Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
-								<footer class="read-more">
-									<a class="read-more__link" href="#cold">Читать далее</a>
-									<span class="watch">45</span>
-									<span class="comment">6</span>
-								</footer>
-							</article>
-						</dd>
-						<dt class="red-line__news__head">Москву поглотят многотысячные морозные митинги </dt>
-						<dd class="red-line__news__content">
-							<article>
-								<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
-								<p>Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
-								<footer class="read-more">
-									<a class="read-more__link" href="#cold">Читать далее</a>
-									<span class="watch">45</span>
-									<span class="comment">6</span>
-								</footer>
-							</article>
-						</dd>
-						<dt class="red-line__news__head">Чурову обещают жаркий правительственный час</dt>
-						<dd class="red-line__news__content">
-							<article>
-								<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
-								<p>Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
-								<footer class="read-more">
-									<a class="read-more__link" href="#cold">Читать далее</a>
-									<span class="watch">45</span>
-									<span class="comment">6</span>
-								</footer>
-							</article>
-						</dd>
-						<dt class="red-line__news__head">Пешеходный мост раздавил водителя грузовика и его напарницу</dt>
-						<dd class="red-line__news__content">
-							<article>
-								<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
-								<p>Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
-								<footer class="read-more">
-									<a class="read-more__link" href="#cold">Читать далее</a>
-									<span class="watch">45</span>
-									<span class="comment">6</span>
-								</footer>
-							</article>
-						</dd>
-					</dl>
-					<!-- RED LINE (END) -->
 				</div>
-				<!-- VIDEO (BEGIN) -->
-				<div class="video">
-					<ul class="video-menu__list">
-						<li class="column video-menu__item">
-							<a href="#" class="video-menu__link">Новые видео</a>
+				<!-- LAST NEWS (BEGIN) -->
+				<ul class="head__list">
+					<li class="column head__item">
+						<figure>
+							<a href="#"><img class="last-news__img" src="i/last-news/last-news_1.jpg" alt="Чубайс похвастался свадебным фото" /></a>
+							<figcaption class="last-news__caption">
+								<a class="link shadow" href="#">Чубайс похвастался свадебным фото</a>
+								<span class="rating">
+									<span class="watch">45</span> 
+									<span class="comment">6</span>
+								</span>
+							</figcaption>
+						</figure>
+					</li
+					><li class="column head__item">
+						<figure>
+							<a href="#"><img class="last-news__img" src="i/last-news/last-news_2.jpg" alt="Неравный брак Пугачёвой заинтересовал сексологов" /></a>
+							<figcaption class="last-news__caption">
+								<a class="link shadow" href="#">Неравный брак Пугачёвой заинтересовал сексологов</a>
+								<span class="rating">
+									<span class="watch">45</span> 
+									<span class="comment">6</span>
+								</span>
+							</figcaption>
+						</figure>
+					</li
+					><li class="column head__item">
+						<figure>
+							<a href="#"><img class="last-news__img" src="i/last-news/last-news_3.jpg" alt="Пенсионерку засекли за вандализмом" /></a>
+							<figcaption class="last-news__caption">
+								<a class="link shadow" href="#">Пенсионерку засекли за вандализмом</a>
+								<span class="rating">
+									<span class="watch">45</span> 
+									<span class="comment">6</span>
+								</span>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<ul class="head__list current__list">
+					<li class="column head__item current__item shadow">Сейчас&nbsp;<a id='cnt-time' href="#time">13.38</a></li
+					><li class="column head__item current__item shadow">USD&nbsp;<a id='cnt-usd' href="#dollar">30.3626</a></li
+					><li class="column head__item current__item shadow">EUR&nbsp;<a id='cnt-eur' href="#evro">39.7841</a></li
+					><li class="column head__item current__item current__item_view_weather shadow">Погода&nbsp;<a id='cnt-weather' href="#weather">-18.3 
+						<img class="current__item_view_weather__img" alt="Погода" src="i/weather/weather__logo.png" width="61" height="72" >
+					</a></li>
+				</ul>
+			</div>
+			<!-- LAST NEWS (END) -->
+			<div class="wrap_230 aside weather">
+				<a class="link weather__link shadow" href="#weather">Прогноз погоды&nbsp;на <span id="weather__date">23 января</span></a>
+			</div>
+		</header>
+		<!-- HEAD (END) -->
+		<div class="red-line__wrap-out u-clearfix">
+			<!-- RED LINE (BEGIN) -->
+			<div class="red-line">
+				<h2 class="column"><a class="link red-line__head" href="#express">Срочно</a></h2>
+				<div class="column red-line__list__wrap-out">
+					<ul class="red-line__list">
+						<li class="column red-line__item">
+							<a href="#victory" class="red-line__link">РОССИЯНКИ ВЫИГРАЛИ  AUSTRALIAN  OPEN</a>
 						</li
-						><li class="column video-menu__item">
-							<a href="#" class="video-menu__link video-menu__link_active">Популярное видео</a>
+						><li class="column red-line__item">
+							<a href="#victory_1" class="red-line__link">Англичанки ВЫИГРАЛИ  AUSTRALIAN  OPEN</a>
 						</li
-						><li class="column video-menu__item">
-							<a href="#" class="video-menu__link">Выбор редакции</a>
-						</li
-						><li class="column video-menu__item">
-							<a href="#" class="video-menu__link">Смотрите скоро</a>
-						</li>
-					</ul>
-					<ul class="video-content__list">
-						<li class="column video-content__item">
-							<figure>
-								<a href="#"><img src="i/video/video-content/video-content__img_1.jpg" alt="В Варшаве открыли спортивную арену" width="172" height="129" /></a>
-								<figcaption><a class="video-content__caption" href="#">В Варшаве открыли спортивную арену</a></figcaption>
-							</figure>
-						</li>
-						<li class="column video-content__item">
-							<figure>
-								<a href="#"><img src="i/video/video-content/video-content__img_2.jpg" alt="Сказка для взрослых об ипотеке, любви и славе" width="172" height="129" /></a>
-								<figcaption><a class="video-content__caption" href="#">Сказка для взрослых об ипотеке, любви и славе</a></figcaption>
-							</figure>
-						</li>
-						<li class="column video-content__item">
-							<figure>
-								<a href="#"><img src="i/video/video-content/video-content__img_3.jpg" alt="Пьеса об ипотеке в Красноярске" width="172" height="129" /></a>
-								<figcaption><a class="video-content__caption" href="#">Затор на трассе Волгоград - Саратов</a></figcaption>
-							</figure>
-						</li>
-						<li class="column video-content__item">
-							<figure>
-								<a href="#"><img src="i/video/video-content/video-content__img_4.jpg" alt="Пьеса об ипотеке в Красноярске" width="172" height="129" /></a>
-								<figcaption><a class="video-content__caption" href="#">Пьеса об ипотеке в Красноярске</a></figcaption>
-							</figure>
-						</li>
-						<li class="column video-content__item">
-							<figure>
-								<a href="#"><img src="i/video/video-content/video-content__img_5.jpg" alt="Экстремалы устроили постельный марафон" width="172" height="130" /></a>
-								<figcaption><a class="video-content__caption" href="#">Экстремалы устроили постельный марафон</a></figcaption>
-							</figure>
+						><li class="column red-line__item">
+							<a href="#victory_2" class="red-line__link">Бразильянки ВЫИГРАЛИ  AUSTRALIAN  OPEN</a>
 						</li>
 					</ul>
 				</div>
-				<!-- VIDEO (END) -->
+				<ul class="column red-line__rule-list">
+					<li class="column rule red-line__rule_prev" id='red-line__prev'>&#60;</li>
+					<li class="column rule red-line__rule_next" id='red-line__next'>&#62;</li>
+				</ul>
+			</div>
+			<!-- VIDEO (BEGIN)-->
+			<div class="red-line__video">
+				<img src="i/video__main.jpg" alt="" width="480" height="360" />
+			</div>
+			<!-- VIDEO (END)-->
+			<!-- RED-LINE__NEWS (BEGIN)-->
+			<dl class="red-line__news wrap_230">
+				<dt class="red-line__news__head red-line__news__head_active">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля</dt>
+				<dd class="red-line__news__content red-line__news__content_selected">
+					<article>
+						<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
+						<p class="red-line__news__content__text">Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
+						<footer>
+							<a class="read-more shadow" href="#cold">Читать далее</a>
+							<span class="rating">
+								<span class="watch">45</span>
+								<span class="comment">6</span>
+							</span>
+						</footer>
+					</article>
+				</dd>
+				<dt class="red-line__news__head">В школе Нальчика вместо полицейских убили летчика-штурмовика</dt>
+				<dd class="red-line__news__content">
+					<article>
+						<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
+						<p class="red-line__news__content__text">Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
+						<footer>
+							<a class="read-more shadow" href="#cold">Читать далее</a>
+							<span class="rating">
+								<span class="watch">45</span>
+								<span class="comment">6</span>
+							</span>
+						</footer>
+					</article>
+				</dd>
+				<dt class="red-line__news__head">Фигурист Гачинский подложил сюрприз Плющенко</dt>
+				<dd class="red-line__news__content">
+					<article>
+						<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
+						<p class="red-line__news__content__text">Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
+						<footer>
+							<a class="read-more shadow" href="#cold">Читать далее</a>
+							<span class="rating">
+								<span class="watch">45</span>
+								<span class="comment">6</span>
+							</span>
+						</footer>
+					</article>
+				</dd>
+				<dt class="red-line__news__head">Москву поглотят многотысячные морозные митинги </dt>
+				<dd class="red-line__news__content">
+					<article>
+						<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
+						<p class="red-line__news__content__text">Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
+						<footer>
+							<a class="read-more shadow" href="#cold">Читать далее</a>
+							<span class="rating">
+								<span class="watch">45</span>
+								<span class="comment">6</span>
+							</span>
+						</footer>
+					</article>
+				</dd>
+				<dt class="red-line__news__head">Чурову обещают жаркий правительственный час</dt>
+				<dd class="red-line__news__content">
+					<article>
+						<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
+						<p class="red-line__news__content__text">Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
+						<footer>
+							<a class="read-more shadow" href="#cold">Читать далее</a>
+							<span class="rating">
+								<span class="watch">45</span>
+								<span class="comment">6</span>
+							</span>
+						</footer>
+					</article>
+				</dd>
+				<dt class="red-line__news__head">Пешеходный мост раздавил водителя грузовика и его напарницу</dt>
+				<dd class="red-line__news__content">
+					<article>
+						<h3 class="red-line__news__content__head">Космический холод обрушится на Москву. Прогноз погоды на 1 февраля </h3>
+						<p class="red-line__news__content__text">Жителей Москвы и области синоптики столичного Гидрометеобюро предупреждают о наступлении аномальных холодов.</p>
+						<footer>
+							<a class="read-more shadow" href="#cold">Читать далее</a>
+							<span class="rating">
+								<span class="watch">45</span>
+								<span class="comment">6</span>
+							</span>
+						</footer>
+					</article>
+				</dd>
+			</dl>
+			<!-- RED-LINE__NEWS (END)-->
+			<!-- RED LINE (END) -->
+		</div>
+		<!-- VIDEO (BEGIN) -->
+		<div class="video">
+			<ul class="video-menu__list">
+				<li class="column video-menu__item">
+					<a href="#" class="video-menu__link">Новые видео</a>
+				</li
+				><li class="column video-menu__item">
+					<a href="#" class="video-menu__link video-menu__link_active">Популярное видео</a>
+				</li
+				><li class="column video-menu__item">
+					<a href="#" class="video-menu__link">Выбор редакции</a>
+				</li
+				><li class="column video-menu__item">
+					<a href="#" class="video-menu__link">Смотрите скоро</a>
+				</li>
+			</ul>
+			<div class="video-content">
+				<ul class="video-content__rule-list">
+					<li class="column rule video-content__rule_prev" id="video-content_prev">&#60;</li>
+					<li class="column rule video-content__rule_next" id="video-content_next">&#62;</li>
+				</ul>
+				<ul class="video-content__list">
+					<li class="column video-content__item">
+						<figure>
+							<a href="#"><img src="i/video/video-content/video-content__img_1.jpg" alt="В Варшаве открыли спортивную арену" width="172" height="129" /></a>
+							<figcaption><a class="video-content__caption" href="#">В Варшаве открыли спортивную арену</a></figcaption>
+						</figure>
+					</li>
+					<li class="column video-content__item">
+						<figure>
+							<a href="#"><img src="i/video/video-content/video-content__img_2.jpg" alt="Сказка для взрослых об ипотеке, любви и славе" width="172" height="129" /></a>
+							<figcaption><a class="video-content__caption" href="#">Сказка для взрослых об ипотеке, любви и славе</a></figcaption>
+						</figure>
+					</li>
+					<li class="column video-content__item">
+						<figure>
+							<a href="#"><img src="i/video/video-content/video-content__img_3.jpg" alt="Пьеса об ипотеке в Красноярске" width="172" height="129" /></a>
+							<figcaption><a class="video-content__caption" href="#">Затор на трассе Волгоград - Саратов</a></figcaption>
+						</figure>
+					</li>
+					<li class="column video-content__item">
+						<figure>
+							<a href="#"><img src="i/video/video-content/video-content__img_4.jpg" alt="Пьеса об ипотеке в Красноярске" width="172" height="129" /></a>
+							<figcaption><a class="video-content__caption" href="#">Пьеса об ипотеке в Красноярске</a></figcaption>
+						</figure>
+					</li>
+					<li class="column video-content__item">
+						<figure>
+							<a href="#"><img src="i/video/video-content/video-content__img_5.jpg" alt="Экстремалы устроили постельный марафон" width="172" height="130" /></a>
+							<figcaption><a class="video-content__caption" href="#">Экстремалы устроили постельный марафон</a></figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- VIDEO (END) -->
+		
+		<!-- SECTIONs (BEGIN) -->
+		<div class="section__wrap-out wrap_730">
+			<section class="column section">
+				<h2><a class="page__head section__head" href="#">За честные выборы</a></h2>
+				<ul class="hot-links">
+					<li><a class="link hot-links__link" href="#">выборы</a></li>
+					<li><a class="link hot-links__link" href="#">Госдума РФ</a></li>
+					<li><a class="link hot-links__link" href="#">нарушения</a></li>
+					<li><a class="link hot-links__link" href="#">Чуров</a></li>
+				</ul>
+				<article class="section__article">
+					<header>
+						<h3>
+							<a class="page__head article__head shadow" href="#">Медведев отметил юбилей Высшего арбитражного суда 
+								<img src="i/section/section__article__img_1.jpg" alt="Медведев отметил юбилей Высшего арбитражного суда" width="253" height="190" /></a>
+						</h3>
+						<div class="rating">
+							<span class="watch">45</span> <span class="comment">6</span>
+						</div>
+					</header>
+					<p class="article__text">Президент положительно оценил изменения в профильном судебном законодательстве, которые произошли за последние семь лет.</p>
+					<a class="read-more shadow" href="#cold">Читать</a>
+				</article>
+				<ul class="relative">
+					<li>
+						<a class="link relative__link" href="#">Медведев: выступать на митинге — не дело
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев опять хочет быть президентом
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев не собирался выпускать Ходорковского
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="section__more">Показать еще</a>
+			</section
+			><section class="column section">
+				<h2><a class="page__head section__head" href="#">Митинги за рубежом</a></h2>
+				<ul class="hot-links">
+					<li><a class="link hot-links__link" href="#">выборы</a></li>
+					<li><a class="link hot-links__link" href="#">фальсификация</a></li>
+					<li><a class="link hot-links__link" href="#">ЦИК</a></li>
+					<li><a class="link hot-links__link" href="#">Явлинский</a></li>
+				</ul>
+				<article class="section__article">
+					<header>
+						<h3>
+							<a class="page__head article__head shadow" href="#">ЦИК объявил Явлинского кандидатом в фигуранты	
+						<img src="i/section/section__article__img_2.jpg" alt="ЦИК объявил Явлинского кандидатом в фигуранты" width="253" height="190" /></a>
+						</h3>
+						<div class="rating">
+							<span class="watch">45</span> <span class="comment">6</span>
+						</div>
+					</header>
+					<p class="article__text">Вслед за официальным отказом регистрировать основателя «Яблока» кандидатом в президенты, последовала...</p>
+					<a class="read-more shadow" href="#cold">Читать</a>
+				</article>
+				<ul class="relative">
+					<li>
+						<a class="link relative__link" href="#">Студент задал Медведеву самый смелый вопрос
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев предложил оставить лишь один госканал
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев готов помириться с Грузией
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="section__more">Показать еще</a>
+			</section>
 				
-				
-				
-				
-				
-				<!-- SECTIONs (BEGIN) -->
-				<div class="section__wrap-out wrap_730">
-					<section class="column section">
-						<h2><a class="page__head section__head" href="#">За честные выборы</a></h2>
-						<ul class="hot-links">
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-						</ul>
-						<article class="section__article">
-							<header>
-								<h3>
-									<a class="page__head article__head" href="#">Медведев отметил юбилей Высшего арбитражного суда 
-										<img src="i/section/section__article__img_1.jpg" alt="Медведев отметил юбилей Высшего арбитражного суда" width="253" height="190" /></a>
-								</h3>
+			<!-- EXCLUSIVE (BEGIN) -->
+			<div class="exclusive">
+				<h2 class="exclusive__head__wrap-out">
+					<a class="link  page__head exclusive__head" href="#exclusive">Эксклюзив</a>
+				</h2>
+				<ul class="exclusive__rule-list">
+					<li class="column rule exclusive__rule_prev" id="exclusive_prev">&#60;</li>
+					<li class="column rule exclusive__rule_next" id="exclusive_next">&#62;</li>
+				</ul>
+				<ul class="exclusive__list"
+					><li class="column exclusive__item">
+						<figure>
+							<a href="#"><img src="i/exclusive/exclusive__img_1.jpg" alt="В Варшаве открыли спортивную арену" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Бандиты оставили Роме Жукову брюки, но забрали деньги</a>
 								<div class="rating">
 									<span class="watch">45</span> <span class="comment">6</span>
 								</div>
-							</header>
-							<p class="article__text">Президент положительно оценил изменения в профильном судебном законодательстве, которые произошли за последние семь лет.</p>
-							<a class="read-more__link" href="#cold">Читать</a>
-						</article>
-						<ul class="relative">
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев: выступать на митинге — не дело</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column exclusive__item">
+						<figure>
+							<a href="#"><img src="i/exclusive/exclusive__img_2.jpg" alt="Сказка для взрослых об ипотеке, любви и славе" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Пенсионерка побила вора и сдала в полицию</a>
 								<div class="rating">
 									<span class="watch">45</span> <span class="comment">6</span>
 								</div>
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев опять хочет быть президентом</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>	
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев не собирался выпускать Ходорковского</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-						</ul>
-						<a href="#" class="section__more">Показать еще</a>
-					</section
-					><section class="column section">
-						<h2><a class="page__head section__head" href="#">Митинги за рубежом</a></h2>
-						<ul class="hot-links">
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-						</ul>
-						<article class="section__article">
-							<header>
-								<h3>
-									<a class="page__head article__head" href="#">ЦИК объявил Явлинского кандидатом в фигуранты	
-								<img src="i/section/section__article__img_2.jpg" alt="ЦИК объявил Явлинского кандидатом в фигуранты" width="253" height="190" /></a>
-								</h3>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column exclusive__item">
+						<figure>
+							<a href="#"><img src="i/exclusive/exclusive__img_3.jpg" alt="Затор на трассе Волгоград - Саратов" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Знаменитый актер был на зоне в авторитете </a>
 								<div class="rating">
 									<span class="watch">45</span> <span class="comment">6</span>
 								</div>
-							</header>
-							<p class="article__text">Вслед за официальным отказом регистрировать основателя «Яблока» кандидатом в президенты, последовала...</p>
-							<a class="read-more__link" href="#cold">Читать</a>
-						</article>
-						<ul class="relative">
-							<li class="relative__item">
-								<a class="relative__link" href="#">Студент задал Медведеву самый смелый вопрос</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column exclusive__item">
+						<figure>
+							<a href="#"><img src="i/exclusive/exclusive__img_4.jpg" alt="Пьеса об ипотеке в Красноярске" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Машину олимпийской чемпионки угнали за 7 минут</a>
 								<div class="rating">
 									<span class="watch">45</span> <span class="comment">6</span>
 								</div>
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев предложил оставить лишь один госканал</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column exclusive__item">
+						<figure>
+							<a href="#"><img src="i/exclusive/exclusive__img_5.jpg" alt="Экстремалы устроили постельный марафон" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Страшная история об украденной груди</a>
 								<div class="rating">
 									<span class="watch">45</span> <span class="comment">6</span>
 								</div>
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев готов помириться с Грузией</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-						</ul>
-						<a href="#" class="section__more">Показать еще</a>
-					</section>
-					
-					<!-- EXCLUSIVE (BEGIN) -->
-					<div class="exclusive">
-						<h2 class="page__head section__head exclusive__head">Эксклюзив</h2>
-						<ul class="video-content__list exclusive__list"
-							><li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/exclusive/exclusive__img_1.jpg" alt="В Варшаве открыли спортивную арену" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Бандиты оставили Роме Жукову брюки, но забрали деньги</a>
-										<div class="rating">
-											<span class="watch">45</span> <span class="comment">6</span>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/exclusive/exclusive__img_2.jpg" alt="Сказка для взрослых об ипотеке, любви и славе" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Пенсионерка побила вора и сдала в полицию</a>
-										<div class="rating">
-											<span class="watch">45</span> <span class="comment">6</span>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/exclusive/exclusive__img_3.jpg" alt="Затор на трассе Волгоград - Саратов" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Знаменитый актер был на зоне в авторитете </a>
-										<div class="rating">
-											<span class="watch">45</span> <span class="comment">6</span>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/exclusive/exclusive__img_4.jpg" alt="Пьеса об ипотеке в Красноярске" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Машину олимпийской чемпионки угнали за 7 минут</a>
-										<div class="rating">
-											<span class="watch">45</span> <span class="comment">6</span>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/exclusive/exclusive__img_5.jpg" alt="Экстремалы устроили постельный марафон" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Страшная история об украденной груди</a>
-										<div class="rating">
-											<span class="watch">45</span> <span class="comment">6</span>
-										</div>
-									</figcaption>
-								</figure>
-							</li
-						></ul>
-					</div>
-					<!-- EXCLUSIVE (END) -->
-					<section class="column section">
-						<h2><a class="page__head section__head" href="#">Детские сады</a></h2>
-						<ul class="hot-links">
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-						</ul>
-						<article class="section__article">
-							<header>
-								<h3>
-									<a class="page__head article__head" href="#">Медведев отметил юбилей Высшего арбитражного суда 
-										<img src="i/section/section__article__img_3.jpg" alt="Медведев отметил юбилей Высшего арбитражного суда" width="253" height="190" /></a>
-								</h3>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</header>
-							<p class="article__text">Президент положительно оценил изменения в профильном судебном законодательстве, которые произошли за последние семь лет.</p>
-							<a class="read-more__link" href="#cold">Читать</a>
-						</article>
-						<ul class="relative">
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев: выступать на митинге — не дело</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев опять хочет быть президентом</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>	
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев не собирался выпускать Ходорковского</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-						</ul>
-						<a href="#" class="section__more">Показать еще</a>
-					</section
-					><section class="column section">
-						<h2><a class="page__head section__head" href="#">Фигурное катание</a></h2>
-						<ul class="hot-links">
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-							<li><a href="#">Выборы</a></li>
-						</ul>
-						<article class="section__article">
-							<header>
-								<h3>
-									<a class="page__head article__head" href="#">ЦИК объявил Явлинского кандидатом в фигуранты	
-								<img src="i/section/section__article__img_4.jpg" alt="ЦИК объявил Явлинского кандидатом в фигуранты" width="253" height="190" /></a>
-								</h3>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</header>
-							<p class="article__text">Вслед за официальным отказом регистрировать основателя «Яблока» кандидатом в президенты, последовала...</p>
-							<a class="read-more__link" href="#cold">Читать</a>
-						</article>
-						<ul class="relative">
-							<li class="relative__item">
-								<a class="relative__link" href="#">Студент задал Медведеву самый смелый вопрос</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев предложил оставить лишь один госканал</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-							<li class="relative__item">
-								<a class="relative__link" href="#">Медведев готов помириться с Грузией</a>
-								<div class="rating">
-									<span class="watch">45</span> <span class="comment">6</span>
-								</div>
-							</li>
-						</ul>
-						<a href="#" class="section__more">Показать еще</a>
-					</section>
-					<!-- PHOTOGALLERY (BEGIN) -->
-					<div class="photogallery">
-						<h2 class="page__head section__head photogallery__head">Фотогалерея</h2>
-						<ul class="video-content__list exclusive__list"
-							><li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/photogallery/photogallery__img_1.jpg" alt="Православные отмечают Крещение Господне" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Православные отмечают Крещение Господне</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/photogallery/photogallery__img_2.jpg" alt="Самые заметные события 2011 года" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Самые заметные события 2011 года</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/photogallery/photogallery__img_3.jpg" alt="Проспект Сахарова собрал больше людей, чем Болотная" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Проспект Сахарова собрал больше людей, чем Болотная </a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/photogallery/photogallery__img_4.jpg" alt="Очень Новый год!" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Очень Новый год!</a>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="column video-content__item exclusive__item">
-								<figure>
-									<a href="#"><img src="i/photogallery/photogallery__img_5.jpg" alt="Иранские студенты захватили здание дипмиссии Великобритании" width="140" height="105" /></a>
-									<figcaption>
-										<a class="video-content__caption exclusive__caption" href="#">Иранские студенты захватили здание дипмиссии Великобритании</a>
-									</figcaption>
-								</figure>
-							</li
-						></ul>
-					</div>			
-					<!-- PHOTOGALLERY (END) -->
-				</div> 
-				<!-- SECTIONs (END) -->
-				<!-- ASIDE (BEGIN) -->
-				<aside class="aside wrap_230">
-					<h2 class="page__head section__head aside__head">Лента</h2>
-					<ul class="r">
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Мария Шарапова победила Дэвида Бекхэма</a>
-							<div class="rating">
+							</figcaption>
+						</figure>
+					</li
+				></ul>
+			</div>
+			<!-- EXCLUSIVE (END) -->
+			
+			<section class="column section">
+				<h2><a class="page__head section__head" href="#">Детские сады</a></h2>
+				<ul class="hot-links">
+					<li><a class="link hot-links__link" href="#">выборы</a></li>
+					<li><a class="link hot-links__link" href="#">Госдума РФ</a></li>
+					<li><a class="link hot-links__link" href="#">нарушения</a></li>
+					<li><a class="link hot-links__link" href="#">Чуров</a></li>
+				</ul>
+				<article class="section__article">
+					<header>
+						<h3>
+							<a class="page__head article__head shadow" href="#">Медведев отметил юбилей Высшего арбитражного суда 
+								<img src="i/section/section__article__img_3.jpg" alt="Медведев отметил юбилей Высшего арбитражного суда" width="253" height="190" /></a>
+						</h3>
+						<div class="rating">
+							<span class="watch">45</span> <span class="comment">6</span>
+						</div>
+					</header>
+					<p class="article__text">Президент положительно оценил изменения в профильном судебном законодательстве, которые произошли за последние семь лет.</p>
+					<a class="read-more shadow" href="#cold">Читать</a>
+				</article>
+				<ul class="relative">
+					<li>
+						<a class="link relative__link" href="#">Медведев: выступать на митинге — не дело
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Следы Майкла Джексона появились в Голливуде</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев опять хочет быть президентом
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Прохоров верит в наукограды и «Ё-мобиль»</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев не собирался выпускать Ходорковского
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Явлинский хочет засудить ЦИК</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="section__more">Показать еще</a>
+			</section
+			><section class="column section">
+				<h2><a class="page__head section__head" href="#">Фигурное катание</a></h2>
+				<ul class="hot-links">
+					<li><a class="link hot-links__link" href="#">выборы</a></li>
+					<li><a class="link hot-links__link" href="#">фальсификация</a></li>
+					<li><a class="link hot-links__link" href="#">ЦИК</a></li>
+					<li><a class="link hot-links__link" href="#">Явлинский</a></li>
+				</ul>
+				<article class="section__article">
+					<header>
+						<h3>
+							<a class="page__head article__head shadow" href="#">ЦИК объявил Явлинского кандидатом в фигуранты	
+						<img src="i/section/section__article__img_4.jpg" alt="ЦИК объявил Явлинского кандидатом в фигуранты" width="253" height="190" /></a>
+						</h3>
+						<div class="rating">
+							<span class="watch">45</span> <span class="comment">6</span>
+						</div>
+					</header>
+					<p class="article__text">Вслед за официальным отказом регистрировать основателя «Яблока» кандидатом в президенты, последовала...</p>
+					<a class="read-more shadow" href="#cold">Читать</a>
+				</article>
+				<ul class="relative">
+					<li>
+						<a class="link relative__link" href="#">Студент задал Медведеву самый смелый вопрос
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">«Остромирово Евангелие» решено хранить всем миром</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев предложил оставить лишь один госканал
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">У Ивана Урганта Медный всадник получился солнечным</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link" href="#">Медведев готов помириться с Грузией
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">В Давосе обсуждают, простить ли Греции долг</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="section__more">Показать еще</a>
+			</section>
+			
+			<!-- PHOTOGALLERY (BEGIN) -->
+			<div class="photogallery">
+				<h2><a  class="link page__head section__head photogallery__head" href="#photogallery">Фотогалерея</a></h2>
+				<ul
+					><li class="column photogallery__item">
+						<figure>
+							<a href="#"><img class="photogallery__img" src="i/photogallery/photogallery__img_1.jpg" alt="Православные отмечают Крещение Господне" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Православные отмечают Крещение Господне</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column photogallery__item">
+						<figure>
+							<a href="#"><img class="photogallery__img" src="i/photogallery/photogallery__img_2.jpg" alt="Самые заметные события 2011 года" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Самые заметные события 2011 года</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column photogallery__item">
+						<figure>
+							<a href="#"><img class="photogallery__img" src="i/photogallery/photogallery__img_3.jpg" alt="Проспект Сахарова собрал больше людей, чем Болотная" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Проспект Сахарова собрал больше людей, чем Болотная </a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column photogallery__item">
+						<figure>
+							<a href="#"><img class="photogallery__img" src="i/photogallery/photogallery__img_4.jpg" alt="Очень Новый год!" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Очень Новый год!</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="column photogallery__item">
+						<figure>
+							<a href="#"><img class="photogallery__img" src="i/photogallery/photogallery__img_5.jpg" alt="Иранские студенты захватили здание дипмиссии Великобритании" width="140" height="105" /></a>
+							<figcaption>
+								<a class="exclusive__caption" href="#">Иранские студенты захватили здание дипмиссии Великобритании</a>
+							</figcaption>
+						</figure>
+					</li
+				></ul>
+			</div>			
+			<!-- PHOTOGALLERY (END) -->
+		</div> 
+		<!-- SECTIONs (END) -->
+		
+		<!-- ASIDE (BEGIN) -->
+		<aside class="wrap_230 aside">
+			<!-- RSS (BEGIN) -->
+			<div class="rss">
+				<h2><a class="page__head section__head rss__head" href="#rss_lenta">Лента</a>
+				<a href="#rss" class="rss__logo">RSS</a>
+				</h2>
+				<ul>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Мария Шарапова победила Дэвида Бекхэма
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">В Москве взорвали «Дом-2»</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Следы Майкла Джексона появились в Голливуде
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Путин подбросил в машину герою-спасателю сюрприз</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Прохоров верит в наукограды и «Ё-мобиль»
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Похоронить Никиту не пришел ни один полицейский</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Явлинский хочет засудить ЦИК
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">Премьер устроил блокадникам чаепитие</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">«Остромирово Евангелие» решено хранить всем миром
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-						<li class="relative__item rss__item">
-							<a class="relative__link rss__link" href="#">На Кубани женщину сдуло под машину</a>
-							<div class="rating">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">У Ивана Урганта Медный всадник получился солнечным
+							<span class="rating">
 								<span class="watch">45</span> <span class="comment">6</span>
-							</div>
-						</li>
-					</ul>
-				</aside>
-				<!-- ASIDE (END) -->
-		<!-- </div>
-		div. -->
-	</div><!-- BODY__WRAPPER-IN (END) -->
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">В Давосе обсуждают, простить ли Греции долг
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">В Москве взорвали «Дом-2»
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Путин подбросил в машину герою-спасателю сюрприз
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Похоронить Никиту не пришел ни один полицейский
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">Премьер устроил блокадникам чаепитие
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="link relative__link rss__link shadow" href="#">На Кубани женщину сдуло под машину
+							<span class="rating">
+								<span class="watch">45</span> <span class="comment">6</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- RSS (END) -->
+			<!-- ARCHIVE-NEWS (BEGIN) -->
+			<form action="#" class="archive-news">
+				<ul class="archive-news__list">
+					<li class="column archive-news__item">
+						<select name="archive_date" id="archive_date">
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+						</select>
+					</li>
+					<li class="column archive-news__item">
+						<select name="archive_month" id="archive_month">
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</li>
+					<li class="column archive-news__item">
+						<select name="archive_year" id="archive_year">
+							<option value="2012">2012</option>
+							<option value="2011">2011</option>
+							<option value="2010">2010</option>
+							<option value="2009">2009</option>
+						</select>
+					</li>
+				</ul>
+				<input type="submit" class="archive-news__submit shadow" value="Все новости и видео"/>
+			</form>
+			<!-- ARCHIVE-NEWS (END) -->
+		</aside>
+		<!--ASIDE  (END) -->
+	</div>
+	<!-- PAGE (END) -->
 </body>
 </html>

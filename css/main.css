@@ -1,13 +1,5 @@
-/*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
-
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
-
-/*
- * Corrects block display not defined in IE6/7/8/9 & FF3
- */
-
+/* =NORMALIZE.CSS 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css 
+---------------------------------------------------------*/
 article,
 aside,
 details,
@@ -22,10 +14,6 @@ summary {
     display: block;
 }
 
-/*
- * Corrects inline-block display not defined in IE6/7/8/9 & FF3
- */
-
 audio,
 canvas,
 video {
@@ -33,48 +21,20 @@ video {
     *display: inline;
     *zoom: 1;
 }
-
-/*
- * Prevents modern browsers from displaying 'audio' without controls
- * Remove excess height in iOS5 devices
- */
-
 audio:not([controls]) {
     display: none;
     height: 0;
 }
 
-/*
- * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
- * Known issue: no IE6 support
- */
-
 [hidden] {
     display: none;
 }
-
-
-/* =============================================================================
-   Base
-   ========================================================================== */
-
-/*
- * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
- *    http://clagnut.com/blog/348/#c790
- * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
- *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
- */
 
 html {
     font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
 }
-
-/*
- * Addresses font-family inconsistency between 'textarea' and other form elements.
- */
-
 html,
 button,
 input,
@@ -82,44 +42,19 @@ select,
 textarea {
     font-family: sans-serif;
 }
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-/*
- * Addresses outline displayed oddly in Chrome
- */
-
 a:focus {
     outline: thin dotted;
 }
-
-/*
- * Improves readability when focused and also mouse hovered in all browsers
- * people.opera.com/patrickl/experiments/keyboard/test
- */
 
 a:hover,
 a:active {
     outline: 0;
 }
 
-
-/* =============================================================================
-   Typography
-   ========================================================================== */
-
-/*
- * Addresses font sizes and margins set differently in IE6/7
- * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
- */
-
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-
 h2 {
     font-size: 1.5em;
     margin: 0.83em 0;
@@ -145,17 +80,9 @@ h6 {
     margin: 2.33em 0;
 }
 
-/*
- * Addresses styling not present in IE7/8/9, S5, Chrome
- */
-
 abbr[title] {
     border-bottom: 1px dotted;
 }
-
-/*
- * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
-*/
 
 b,
 strong {
@@ -166,36 +93,20 @@ blockquote {
     margin: 1em 40px;
 }
 
-/*
- * Addresses styling not present in S5, Chrome
- */
-
 dfn {
     font-style: italic;
 }
-
-/*
- * Addresses styling not present in IE6/7/8/9
- */
 
 mark {
     background: #ff0;
     color: #000;
 }
 
-/*
- * Addresses margins set differently in IE6/7
- */
-
 p,
 pre {
     margin: 1em 0;
 }
 
-/*
- * Corrects font family set oddly in IE6, S4/5, Chrome
- * en.wikipedia.org/wiki/User:Davidgothberg/Test59
- */
 
 pre,
 code,
@@ -206,28 +117,15 @@ samp {
     font-size: 1em;
 }
 
-/*
- * Improves readability of pre-formatted text in all browsers
- */
-
 pre {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
-/*
- * 1. Addresses CSS quotes not supported in IE6/7
- * 2. Addresses quote property not supported in S4
- */
-
-/* 1 */
-
 q {
     quotes: none;
 }
-
-/* 2 */
 
 q:before,
 q:after {
@@ -238,11 +136,6 @@ q:after {
 small {
     font-size: 75%;
 }
-
-/*
- * Prevents sub and sup affecting line-height in all browsers
- * gist.github.com/413930
- */
 
 sub,
 sup {
@@ -260,15 +153,6 @@ sub {
     bottom: -0.25em;
 }
 
-
-/* =============================================================================
-   Lists
-   ========================================================================== */
-
-/*
- * Addresses margins set differently in IE6/7
- */
-
 dl,
 menu,
 ol,
@@ -280,9 +164,6 @@ dd {
     margin: 0 0 0 40px;
 }
 
-/*
- * Addresses paddings set differently in IE6/7
- */
 
 menu,
 ol,
@@ -290,9 +171,6 @@ ul {
     padding: 0 0 0 40px;
 }
 
-/*
- * Corrects list images handled incorrectly in IE7
- */
 ul,
 nav ul,
 nav ol {
@@ -300,59 +178,22 @@ nav ol {
     list-style-image: none;
 }
 
-
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-
-/*
- * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
- * 2. Improves image quality when scaled in IE7
- *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
- */
-
 img {
     border: 0; /* 1 */
     -ms-interpolation-mode: bicubic; /* 2 */
 }
-
-/*
- * Corrects overflow displayed oddly in IE9
- */
-
 svg:not(:root) {
     overflow: hidden;
 }
-
-
-/* =============================================================================
-   Figures
-   ========================================================================== */
-
-/*
- * Addresses margin not present in IE6/7/8/9, S5, O11
- */
 
 figure {
     margin: 0;
 }
 
 
-/* =============================================================================
-   Forms
-   ========================================================================== */
-
-/*
- * Corrects margin displayed oddly in IE6/7
- */
-
 form {
     margin: 0;
 }
-
-/*
- * Define consistent border, margin, and padding
- */
 
 fieldset {
     border: 1px solid #c0c0c0;
@@ -360,24 +201,12 @@ fieldset {
     padding: 0.35em 0.625em 0.75em;
 }
 
-/*
- * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3
- * 3. Corrects alignment displayed oddly in IE6/7
- */
-
 legend {
     border: 0; /* 1 */
     padding: 0;
     white-space: normal; /* 2 */
     *margin-left: -7px; /* 3 */
 }
-
-/*
- * 1. Corrects font size not being inherited in all browsers
- * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
- * 3. Improves appearance and consistency in all browsers
- */
 
 button,
 input,
@@ -389,21 +218,10 @@ textarea {
     *vertical-align: middle; /* 3 */
 }
 
-/*
- * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
- */
-
 button,
 input {
     line-height: normal; /* 1 */
 }
-
-/*
- * 1. Improves usability and consistency of cursor style between image-type 'input' and others
- * 2. Corrects inability to style clickable 'input' types in iOS
- * 3. Removes inner spacing in IE7 without affecting normal text inputs
- *    Known issue: inner spacing remains in IE6
- */
 
 button,
 input[type="button"],
@@ -414,21 +232,10 @@ input[type="submit"] {
     *overflow: visible;  /* 3 */
 }
 
-/*
- * Re-set default cursor for disabled elements
- */
-
 button[disabled],
 input[disabled] {
     cursor: default;
 }
-
-/*
- * 1. Addresses box sizing set to content-box in IE8/9
- * 2. Removes excess padding in IE8/9
- * 3. Removes excess padding in IE7
-      Known issue: excess padding remains in IE6
- */
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -438,11 +245,6 @@ input[type="radio"] {
     *width: 13px; /* 3 */
 }
 
-/*
- * 1. Addresses appearance set to searchfield in S5, Chrome
- * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
- */
-
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
     -moz-box-sizing: content-box;
@@ -450,19 +252,10 @@ input[type="search"] {
     box-sizing: content-box;
 }
 
-/*
- * Removes inner padding and search cancel button in S5, Chrome on OS X
- */
-
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
-
-/*
- * Removes inner padding and border in FF3+
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
- */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -470,24 +263,10 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-/*
- * 1. Removes default vertical scrollbar in IE6/7/8/9
- * 2. Improves readability and alignment in all browsers
- */
-
 textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
 }
-
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
-
-/*
- * Remove most spacing between table cells
- */
 
 table {
     border-collapse: collapse;
@@ -522,7 +301,8 @@ blockquote:before,blockquote:after,q:before,q:after {
 
 /* =CLEARING
 ---------------------------------------------------------*/
-.u-clearfix:before, /* For modern browsers */ .u-clearfix:after {
+.u-clearfix:before, /* For modern browsers */ 
+.u-clearfix:after {
 	content: "";
 	display: table;
 }
@@ -541,6 +321,8 @@ blockquote:before,blockquote:after,q:before,q:after {
 	font-size: 0;
 	line-height: 0;
 }
+
+
 /* =BODY
 ---------------------------------------------------------*/
 html,body {
@@ -557,118 +339,57 @@ body {
 ---------------------------------------------------------*/
 a,a:link {
 	text-decoration: underline;
-	color:#0077a4 ;
+	color:#0077a4;
 }
 
 a:visited {
-	color: ;
+	text-decoration:none;
+	color:#ccc;
 }
 
 a:hover,a:active {
-	text-decoration: ;
+	text-decoration: underline;
 }
-
+/* =GLOBAL
+---------------------------------------------------------*/
+.column{
+	display: inline-block;
+	vertical-align:top;
+} 
+*+html .column{
+	display:inline;
+	zoom:1;
+}
+.page__head, .page__head:link {
+	font-size:1.714em;
+	text-decoration:none;
+	color:#fff;
+}
+.page__head:link:hover {
+	text-decoration:none;	
+}
+.aside{
+	background:url("../i/aside/aside__bg.png");
+}
+.link:link{
+	text-decoration:none;
+	color: #363636;
+}
 /* = HEADINGS
 ---------------------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
-}
-.page__head,.page__head:link {
-	font-size:1.714em;
-	text-decoration:none;
-	color:#fff;
 }
 /* =TEXT
 ---------------------------------------------------------*/
 
 /* =WRAPPER'S
 ---------------------------------------------------------*/
-.body__wrap-in {
+.page {
 	width:960px;
 	margin: auto;
 }
 
-/* =HEADER
----------------------------------------------------------*/
-.head {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: padding-box;
-	box-sizing: border-box;
-	width: 100%;
-	border-top:1px solid #000;
-}
-.head__menu{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: padding-box;
-	box-sizing: border-box;
-	height:38px;
-	padding:12px 21px 10px;
-	text-decoration:none;
-	font-weight:bold;
-	background:#262626;
-	color:#fff;
-}
-.column{
-	display: inline-block;
-	vertical-align:middle;
-} 
-/* .item {
-	display: inline-block;
-	vertical-align:top;
-} */
-
-/* =NAVIGATION
----------------------------------------------------------*/
-.menu__link,.menu__link:link {
-	color:#fff;
-	text-decoration:none;
-}
-.menu__link_active,.menu__link_active:link {
-	background:#00af15;
-	color:#262626;
-	text-decoration:none;
-}
-.menu__link:hover,.menu__link:link:hover {
-	background:#2f2f2f;
-	text-decoration:none;
-}
-
-.search{
-	padding-top:6px;
-}
-.search__string{
-	float:left;
-	width:220px;
-	height:20px;
-	margin-right:-100%;
--webkit-border-radius: 14px;
-   -moz-border-radius: 14px;
-		border-radius: 14px;
-}
-.search__submit{
-	font-size:0;
-	border:none;
-	background:url("../i/search__submit.jpg") 0 0 no-repeat;
-	height:12px;
-	width:17px;
-}
-.auth__link{
-	cursor: pointer;
-}
-.auth__popup{
-	display:none;
-}
-/* =LOGO
----------------------------------------------------------*/
-.logo {
-	float:left;
-	height:95px;
-	width:102px;
-	overflow:hidden;
-	margin-right:10px;
-}
-/* =PAGE
----------------------------------------------------------*/
 .wrap_730,
 .wrap_230{
 	float:left;
@@ -683,6 +404,119 @@ h1,h2,h3,h4,h5,h6 {
 .wrap_230{
 	width:230px;
 }
+/* =HEADER
+---------------------------------------------------------*/
+.head {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: padding-box;
+	box-sizing: border-box;
+	width: 100%;
+	border-top:1px solid #000;
+	background:url("../i/head__bg.png") 100% 0 no-repeat;
+}
+.head__menu{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: padding-box;
+	box-sizing: border-box;
+	padding-left:20px;
+	padding-right:20px;
+	border-top:1px solid #333;
+	border-right:1px solid #333;
+	border-bottom:1px solid #000;
+	border-left:1px solid #000;
+	text-decoration:none;
+	font-weight:bold;
+	background:#262626;
+	color:#fff;
+}
+
+/* =NAVIGATION
+---------------------------------------------------------*/
+.menu__link, .menu__link:link {
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#fff;
+	text-decoration:none;
+}
+.menu__link_active, .menu__link_active:link {
+	border-top:1px solid #00d61e;
+	border-bottom:1px solid #068915;
+	background:#00af15;
+	color:#262626;
+	text-decoration:none;
+}
+.menu__link:hover, .menu__link:link:hover {
+	text-decoration:none;
+	background:#2f2f2f;
+}
+.menu__link_active:hover, .menu__link_active:link:hover {
+	border-top:1px solid #333;
+	color:#fff;
+}
+
+/* =SEARCH
+---------------------------------------------------------*/
+.search{
+	position:relative;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.search__string{
+	width:205px;
+	height:20px;
+	margin-right:-100%;
+	padding-left:30px;
+-webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+		border-radius: 14px;
+	font-size:0.8em;
+	background:#e5e5e5;
+}
+.search__submit{
+	position:absolute;
+	left:30px;
+	top:15px;
+	font-size:0;
+	border:none;
+	background:url("../i/ntv_spright.png") -97px -35px no-repeat;
+	height:12px;
+	width:17px;
+}
+
+/* =LOGO
+---------------------------------------------------------*/
+.logo__wrap-out{
+	float:left;
+	position:relative;
+	height:95px;
+	width:102px;
+}	
+.logo__wrap-out:after {
+	content:'\0020';
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:-7px;
+	width:100%;
+	height:7px;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADdJREFUeNpiZDjKYM0AAkwMWAELwz+Gr2AWIy4Ffxm+ETIBouA/bgU/8Cv4S0jBP4af+BQABBgAPJcQ10+vJcYAAAAASUVORK5CYII=") 0 0 repeat-x;
+}
+.logo {
+	height:95px;
+	width:102px;
+	overflow:hidden;
+	margin-right:10px;
+}
+.logo__head{
+	display: block;
+	font-size: 3em;
+	font-weight: bolder;
+	text-align: center;
+	color: green;
+}
+/* =PAGE
+---------------------------------------------------------*/
 
 /* =LAST NEWS (BEGIN)
 ---------------------------------------------------------*/
@@ -690,6 +524,7 @@ h1,h2,h3,h4,h5,h6 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: padding-box;
 	box-sizing: border-box;	
+	height:95px;
 	margin-left:122px;
 	white-space:nowrap;
 }
@@ -700,36 +535,55 @@ h1,h2,h3,h4,h5,h6 {
 	width:32.3%;
 	white-space:normal;
 }
-.head__list_has_height{
-	border-bottom:1px solid #b5b5b5;
-	height:94px;	
-}
+
 .last-news__img{
 	float:left;
-	margin:0 10px 10px 0;
+}
+.last-news__caption{
+	padding-left:81px;
+}
+.current__list{
+	position:relative;
+	z-index:1;
+	height:auto;
 }
 .current__item{
-	padding:6px;
+	padding:7px;
+	border-top:1px solid #b5b5b5;
 	font-size:0.85em;
 	font-weight:bold;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAYAAADeM14FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFBJREFUeNpiYOjn+Q8EDDDMwHBe7j+yIBPD178MDKb8DIwTeEHSDIwM28TBDDC4+ZWBheHTHzj/f8FnhMD/1A8QHVAD4YYy/ofYxQjTBhBgAOu3M6s5QH6WAAAAAElFTkSuQmCC") 0 50% no-repeat;
 }
 
+.current__item_view_weather{
+	position:relative;
+	width:22%;
+	padding-left:40px;
+	text-indent:7px;
+	background-position:40px 50%;
+}
+
+.current__item_view_weather__img{
+	position:absolute;
+	bottom:50px;
+	left:43px;
+}
 .current__item a{
 	font-weight:normal;
 }
 
-.weather__logo{
-	float:left;
-	width:115px;
-	padding-left:20px;
+
+.weather{
+	height:135px;
 }
+
 .weather__link{
 	float:right;
-	background:url("../i/weather/weather__link.jpg") 0 0 no-repeat;
 	height:100%;
 	width:71px;
 	padding-top:59px;
 	line-height:1em;
+	background:url("../i/weather/weather__link.jpg") 0 0 no-repeat;
 }
 .weather__item{
 	padding-left:20px;
@@ -751,13 +605,50 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform:uppercase;
 	background:#560000;
 }
-.red-line__head{
+.red-line:after{
+	content:'\0020';
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	width:100%;
+	height:50%;
+	background:rgba(255,255,255,0.05);
+}
+.red-line .column{
+	vertical-align:middle;
+}
+.red-line__head, .red-line__head:link{
+	padding:10px;
 	font-weight:bold;
-	text-indent:20px;
+	color:#fff;
 }
 .red-line__list__wrap-out{
+	position:relative;
+	z-index:1;
 	width:760px;
 	overflow:hidden;
+}
+.red-line__list__wrap-out:before,
+.red-line__list__wrap-out:after{
+	content:'\0020';
+	position:absolute;
+	top:0;
+	display:block;
+}
+.red-line__list__wrap-out:before{
+	left:0;
+	border-top:20px solid #560000;
+	border-right:10px solid #c82222;
+	border-bottom:20px solid #c82222;
+	border-left:10px solid #560000;
+}
+.red-line__list__wrap-out:after{
+	right:0;
+	border-top:20px solid #c82222;
+	border-right:10px solid #560000;
+	border-bottom:20px solid #560000;
+	border-left:10px solid #c82222;
 }
 .red-line__list{
 	white-space:nowrap;
@@ -766,13 +657,38 @@ h1,h2,h3,h4,h5,h6 {
 	width:760px;
 	text-align:center;
 }
-.red-line__link:link{
+.red-line__link, .red-line__link:link{
+	display:block;
+	padding:10px 0;
 	text-decoration:none;
+	background:#c82222;
 	color:#fff;
 }
-.red-line__news{
+.red-line__rule-list{
+	width:80px;
+}
+.rule{
 	position:relative;
+	z-index:1;
+	font-size:0;
+	height:40px;
+	width:35px;
+	cursor: pointer;
+	background-image:url(../i/ntv_spright.png);
+	background-repeat:no-repeat;
+}
+.red-line__rule_prev{
+	background-position:8px 8px;	
+}
+
+.red-line__rule_next{
 	float:right;
+	background-position:-14px 8px;
+}
+.red-line__news{
+	float:right;
+	position:relative;
+	top:-10px;
 -webkit-box-shadow: 0 0 5px #333;
    -moz-box-shadow: 0 0 5px #333;
 	-ms-box-shadow: 0 0 5px #333;
@@ -786,10 +702,22 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight:bold;
 	line-height:1em;
 	letter-spacing:-1px;
+	cursor: pointer;
+	color:#d7d7d7;
+}
+.red-line__news__head:hover{
+	background:#2f2f2f;
+	color:#fff;
+}
+.red-line__news__head_active,
+.red-line__news__head_active:hover{
+	border-top:1px solid #c70000;
+	border-bottom:1px solid #710000;
+	background:#a80000;
+	color:#fff;
 }
 .red-line__news__head:first-child{
 	border-top:none;
-	padding-top:0;
 }
 .red-line__news__head:last-child{
 	border-bottom:none;
@@ -804,7 +732,7 @@ h1,h2,h3,h4,h5,h6 {
 	-moz-box-sizing: padding-box;
 	box-sizing: border-box;	
 	width:230px;
-	padding:10px;
+	padding:20px 10px;
 }
 .red-line__news__content_selected{
 	z-index:1;
@@ -814,6 +742,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size:1.857em;
 	line-height:1.17em;
 	color:#ffeb9a;
+}
+.red-line__news__content__text{
+	margin-bottom:20px;
 }
 .red-line__video{
 	float:left;
@@ -830,7 +761,8 @@ h1,h2,h3,h4,h5,h6 {
 .video-menu__item{
 	width:25%;
 }
-.video-menu__link:link{
+.video-menu__link, .video-menu__link:link{
+	position:relative;
 	display:block;
 	padding:11px 0;
 	font-weight:bold;
@@ -839,24 +771,66 @@ h1,h2,h3,h4,h5,h6 {
 	background:#ffc500;
 	color:#564400;
 }
-.video-menu__link_active:link,
+.video-menu__link:before, .video-menu__link:link:before{
+	position:relative;
+	display:inline-block;
+	content:'\0020';
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAYAAADeM14FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADdJREFUeNpiDHNh+M/AwMDIAAVMUPo/ugBcEFkALMiCzFs5OwChAsQBGc6EzAET/+8HoFgLEGAA2PoMlDT4arUAAAAASUVORK5CYII=") 0 0 no-repeat;
+	height:8px;
+	width:4px;
+	margin-right:4px;
+}
+.video-menu__link_active, .video-menu__link_active:link,
 .video-menu__link:hover{
+	text-decoration:none;
 	background:transparent;
 	color:#ffeb9a;
 }
-
+.video-menu__link_active:before, .video-menu__link_active:link:before,
+.video-menu__link:hover:before{
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADFJREFUeNpi/P961n8GHICJUTQNqwRInBHK/g80AUUCRCEr/g+1AmENsg4UCSAACDAAxy4RhC7eDQcAAAAASUVORK5CYII=") 0 0 no-repeat;
+	width:8px;
+}
+.video-content__rule-list{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	margin-top:10px;
+}
+.video-content__rule_prev{
+	height:190px;
+	width:30px;
+	background-position:-41px 85px;
+}
+.video-content__rule_next{
+	float:right;
+	height:190px;
+	width:30px;
+	background-position:-63px 85px;
+}
+.video-content{
+	position:relative;
+}
 .video-content__list{
 	padding:12px;
 	text-align:center;
 	white-space:nowrap;
 }
 .video-content__item{
+	position:relative;
+	z-index:1;
 	width:172px;
-	padding:0 3px;
+	margin:0 3px;
 	white-space:normal;
+-webkit-box-shadow: 0 -3px 10px #211712;
+   -moz-box-shadow: 0 -3px 10px #211712;
+	-ms-box-shadow: 0 -3px 10px #211712;
+		box-shadow: 0 -3px 10px #211712;
 }
 
-.video-content__caption:link{
+.video-content__caption, .video-content__caption:link,
+.video-content__caption:link:visited {
 	display:block;
 	position:relative;
 	top:-2px;
@@ -881,7 +855,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin-right:10px;
 	vertical-align:top;
 }
-.section__head{
+.section__head, .section__head:link{
 	display:block;
 	margin-bottom:10px;
 	padding:5px 10px;
@@ -890,23 +864,68 @@ h1,h2,h3,h4,h5,h6 {
 -webkit-border-radius: 3px 3px 0 0;
    -moz-border-radius: 3px 3px 0 0;
 		border-radius: 3px 3px 0 0;
-	background:#313131;
+	background:#313131  url("../i/ntv_spright.png") 330px -23px no-repeat;
 }
 
 .hot-links{
 	float:right;
+	width:82px;
+	overflow:hidden;
 }
-
+.hot-links__link, .hot-links__link:link{
+	position:relative;
+	display:block;
+	padding:10px 0;
+	border-bottom:1px solid #ececec;
+	font-size:0.785em;
+	font-weight:bold;
+	line-height:1em;
+	color:#662e18;
+}
+.hot-links__link:before{
+	content:'\0020';
+	display:block;
+	width:50%;
+	height:100%;
+	position:absolute;
+	left:50%;
+	top:0;
+	z-index:0;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q1ZDVkNSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNWQ1ZDUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  rgba(213,213,213,0) 0%, rgba(213,213,213,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(213,213,213,0)), color-stop(100%,rgba(213,213,213,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(213,213,213,0) 0%,rgba(213,213,213,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(213,213,213,0) 0%,rgba(213,213,213,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(213,213,213,0) 0%,rgba(213,213,213,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(213,213,213,0) 0%,rgba(213,213,213,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d5d5d5', endColorstr='#d5d5d5',GradientType=1 ); /* IE6-8 */
+}
+.hot-links__link:after{
+	content:'\0020';
+	display:block;
+	position:absolute;
+	right:4px;
+	top:12px;
+	z-index:1;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFdJREFUeNpi3L59uwUDA0MGEAcA8QYgnsHCw8OTISoqGi8oKMjw/v37+NevXzMw3rhx44OIiAg/AxS8efPmIxNQxQYGJADiMwG1zACyFwLxRxAN4gMEGADA0h3tOl/jzAAAAABJRU5ErkJggg==) 0 0 no-repeat;
+	height:5px;
+	width:5px;
+}
 .section__article{
 	padding:10px;
+	border:1px solid #ccc;
 	background:#d5d5d5;
 }
-.article__head:link{
+.article__head, .article__head:link{
 	position:relative;
 	display:block;
 	padding-top:200px;
 	line-height:1em;
 	color:#0079ab;
+}
+.article__head:link:hover{
+	text-decoration:none;
 }
 .article__head img{
 	position:absolute;
@@ -920,18 +939,18 @@ h1,h2,h3,h4,h5,h6 {
 	padding:13px 0;
 }
 
-
-.relative__item{
+.relative__link, .relative__link:link,
+.relative__link:link:visited {
+	display:block;
 	padding:9px 10px;
 	border-bottom:1px dotted #acacac;
-}
-.relative__link:link{
 	line-height:1.125em;
-	text-decoration:none;
 	white-space:nowrap;
-	color:#363636;
+	background:url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAYAAADeM14FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFBJREFUeNpiYOjn+Q8EDDDMwHBe7j+yIBPD178MDKb8DIwTeEHSDIwM28TBDDC4+ZWBheHTHzj/f8FnhMD/1A8QHVAD4YYy/ofYxQjTBhBgAOu3M6s5QH6WAAAAAElFTkSuQmCC") 99% 50% no-repeat;
 }
-.section__more:link{
+
+.section__more, .section__more:link,
+.section__more:link:visited{
 	display:block;
 	width:125px;
 	height:30px;
@@ -950,6 +969,7 @@ h1,h2,h3,h4,h5,h6 {
 	color:#fff;
 }
 .section__more:link:hover{
+	text-decoration:none;
 	border:1px solid #c2c2c2;
 	background:#fefefe;
 	color:#363636;
@@ -957,15 +977,64 @@ h1,h2,h3,h4,h5,h6 {
 /* =EXCLUSIVE (BEGIN)
 ---------------------------------------------------------*/
 .exclusive{
+	position:relative;
 	margin-right:10px;
 	background:url("../i/exclusive/exclusive__bg.png");
 }
-.exclusive__head{
-	text-align:center;
+.exclusive__head__wrap-out{
+	position:relative;
+	margin-bottom:10px;
+-webkit-border-radius: 3px 3px 0 0;
+   -moz-border-radius: 3px 3px 0 0;
+		border-radius: 3px 3px 0 0;
 	border:1px solid #360935;
 	border-top:2px double #d050cd;
-	background:#933391;
+	background:#5c075a;
 }
+.exclusive__head__wrap-out:before,
+.exclusive__head__wrap-out:after{
+	content:'\0020';
+	position:absolute;
+	top:0;
+	z-index:1;
+	display:block;
+}
+.exclusive__head__wrap-out:before{
+	left:74px;
+	border-top:19px solid #600a5d;
+	border-right:10px solid #933391;
+	border-bottom:18px solid #933391;
+	border-left:10px solid #600a5d;
+}
+.exclusive__head__wrap-out:after{
+	right:74px;
+	border-top:19px solid #933391;
+	border-right:10px solid #600a5d;
+	border-bottom:19px solid #600a5d;
+	border-left:10px solid #933391;
+}
+.exclusive__head, .exclusive__head:link{
+	display:block;
+	width:550px;
+	margin:auto;
+	padding:5px 10px;
+	text-align:center;
+	background:#933391;
+	color:#fff;
+}
+
+.exclusive__rule_prev{
+	position:absolute;
+	top:0;
+	left:15px;
+	background-position:-85px 10px;
+}
+.exclusive__rule_next{
+	position:absolute;
+	top:0;
+	right:15px;
+	background-position:-115px 10px;
+}	
 .exclusive__list{
 	padding:0 0 10px 0;
 	margin-bottom:10px;
@@ -976,63 +1045,111 @@ h1,h2,h3,h4,h5,h6 {
 	padding:0;
 	text-align:left;
 }
-.exclusive__caption:link{
+.exclusive__caption, .exclusive__caption:link{
 	padding:0;
+	text-decoration:none;
 	background:transparent;
 	color:#363636;
 }
 
-.aside{
-	background:url("../i/aside/aside__bg.png");
+/* =PHOTOGALLERY (BEGIN)
+---------------------------------------------------------*/
+.photogallery__head, .photogallery__head:link{
+	border:1px solid #012b2c;
+	border-top:2px double #289193;
+	background-color:#045152;
+	background-position:710px -24px;
+	color:#fff;
 }
 
-.aside__head{
+.photogallery__item{
+	width:140px;
+	padding-left:2px;
+}
+.photogallery__img{
+-webkit-box-shadow: 1px 1px #ececec, 2px 2px #b8b8b8, 3px 3px #ececec, 4px 4px #cacaca;
+   -moz-box-shadow: 1px 1px #ececec, 2px 2px #b8b8b8, 3px 3px #ececec, 4px 4px #cacaca;
+	-ms-box-shadow: 1px 1px #ececec, 2px 2px #b8b8b8, 3px 3px #ececec, 4px 4px #cacaca;
+		box-shadow: 1px 1px #ececec, 2px 2px #b8b8b8, 3px 3px #ececec, 4px 4px #cacaca;
+		
+}
+/* =RSS  (BEGIN)
+---------------------------------------------------------*/
+.rss{
+	position:relative;
+}
+.rss__head, .rss__head:link{
 	padding-left:20px;
 	background:#8b0000;
 	border:1px solid #3e0000;
 	border-top:2px double #c70000;
 }
-.rss__item{
+
+.rss__logo, .rss__logo:link{
+	position:absolute;
+	right:8px;
+	top:8px;
+	padding:5px 10px;
+	border-top:1px solid #440000;
+	border-bottom:1px solid #a80000;
+-webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+		border-radius: 3px;
+	text-decoration:none;
+	background:#601111;
+	color:#fff;
+}
+.rss__link, .rss__link:link{
 	padding-left:20px;
 	border-bottom:1px solid #c0c0c0;
-}
-.rss__link:link{
 	white-space:normal;
+	background-image:none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.read-more{
-	margin-top:20px;
+/* =ARCHIVE-NEWS (BEGIN)
+---------------------------------------------------------*/
+.archive-news{
+	padding:20px 5px 10px;
+	border-top:2px double #31abd7;
+	border-bottom:1px solid #003969;
+	background: #2686c5; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI2ODZjNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYzY0YjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #2686c5 0%, #1c64b1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2686c5), color-stop(100%,#1c64b1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #2686c5 0%,#1c64b1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #2686c5 0%,#1c64b1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #2686c5 0%,#1c64b1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #2686c5 0%,#1c64b1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2686c5', endColorstr='#1c64b1',GradientType=0 ); /* IE6-8 */
+	
 }
-.read-more__link:link{
+
+.archive-news__list{
+	text-align:center;
+	white-space:nowrap;
+}
+.archive-news__item{
+	font-size:0.8em;
+	margin:0 10px;
+	border:1px solid #003969;
+}
+
+.archive-news__submit{
+	display:block;
+	margin:10px 20px;
+	padding:5px 15px;
+	border-top:1px solid #fff;
+	border-right:1px solid #bcdef3;	
+	border-bottom:1px solid #003969;
+	border-left:1px solid #bcdef3;	
+	font-weight:bold;
+	background:#bcdef3;
+	color:#00325b;	
+}
+/* =READ-MORE (BEGIN)
+---------------------------------------------------------*/
+.read-more, .read-more:link{
 	position:relative;
 	display:inline-block;
 	width:100px;
@@ -1051,31 +1168,40 @@ h1,h2,h3,h4,h5,h6 {
 	vertical-align:middle;
 	color:#262626;
 }
-.read-more__link:link:after{
+.read-more:after, .read-more:link:after{
 	content:'\0020';
 	display:inline-block;
 	position:absolute;
-	right:-14px;
+	right:-13px;
 	top:-1px;
 	border-top:15px solid transparent;
 	border-right:7px solid transparent;
 	border-bottom:15px solid transparent;
 	border-left:7px solid #00af15;
 }
+
+/* =RATING (BEGIN)
+---------------------------------------------------------*/
 .rating{
+	display:block;
 	padding-top:5px;
 	font-size:0.785em;
 	color:#898989;
 }
 .watch{
-	background:url("../i/rating/rating.png") 0 3px no-repeat;
+	background:url("../i/ntv_spright.png") -122px -32px no-repeat;
 	height:25px;
 	width:16px;
 	padding-left:20px;
 }
 .comment{
-	background:url("../i/rating/rating.png") 0 -12px no-repeat;
+	background:url("../i/ntv_spright.png") -122px -47px no-repeat;
 	height:25px;
 	width:16px;
 	padding-left:20px;
+}
+/* =SHADOW (BEGIN)
+---------------------------------------------------------*/
+.shadow{
+	text-shadow: 0 1px 0 #fff;	
 }
